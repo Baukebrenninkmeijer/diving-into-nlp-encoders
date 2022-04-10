@@ -16,39 +16,84 @@ Bauke Brenninkmeijer
 ---
 
 # Goal
-Highlight the silent revolution of text tokenizers
+Showcase the silent revolution of text tokenizers
 
 <!-- footer: DSFC 2022 • **Text Tokenizers for NLP** • Bauke Brenninkmeijer-->
 
 ---
 
-# whois: Bauke Brenninkmeijer
+## whois:`Bauke Brenninkmeijer`
 
-- Masters in CS and Data Science @Nijmegen
-- @ABNAMRO since 2019
+- MSc in CS and Data Science @Nijmegen
+- Data Scientist @ABNAMRO since 2019
+    - 1.5 years in Data Management
+    - ~1 years in Global Markets
+- Co-founder of DSFC
+
+- [![](/images/GitHub-Mark-32px.png)](https://github.com/Baukebrenninkmeijer) [@baukebrenninkmeijer](https://github.com/Baukebrenninkmeijer)
+
+
+---
+
+# Tokenization [1/2]
+- Required for using text in any NLP techniques.
+- Chops a text into smaller units called **`tokens`**.
+- Tokens can represent many different things, such as
+    - words
+    - parts of words
+    - characters.
+
+---
+
+# Tokenization [2/2]
+
+- Form the building blocks of any NLP model
+- Tokens are mapped to an ID
+- Models ingest these IDs, since they can only use numeric values.
+
+
+---
+
+# Definitions
+
+- **Corpus**: Dataset in NLP
+- **Token**: Part of a text, used to segment a corpus
+- **ID**: an index (i.e. a unique integer) that maps to a token.
 
 ---
 
 # Types of tokenizer
 
-- character based
 - word-based
+`'tokenizer'`
+- character based
+`'t', 'o', 'k', 'e', 'n', 'i', 'z', 'e', 'r'`
 - subword-based
+`'token', 'izer'`
 
 ---
 
 # Character based tokenizer
 
-- Character
-- Vocabulary is only as large as the number of characters.
-- For ASCII, 256. With unicode, this is 1.1M characters.
-- Lose a lot of contextual information
-- Models typically have `max input lengths`.
+- `Small vocabulary`. For ASCII, 256. With unicode, this is 1.1M characters.
+- No out of vocabulary (OOV) words/characters.
+- Lose a lot of meaninful information
+- Models typically have `max input lengths`
 
 ```python
 >>> list('Cat')
 ['C', 'a', 't']
 ```
+
+---
+
+# Character tokenizer in eastern languages
+*Disclaimer: I don't speak chinese*
+
+- Characters change meaning depending on surrounding characters
+- Names can contain multiple characters
+
+進口 means import, but word by word means “get into the mouth”
 
 ---
 

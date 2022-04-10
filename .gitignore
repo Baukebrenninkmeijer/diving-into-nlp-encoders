@@ -1,7 +1,2 @@
-.idea/.gitignore
-.idea/diving-into-nlp-encoders.iml
-.idea/misc.xml
-.idea/modules.xml
-.idea/runConfigurations.xml
-.idea/vcs.xml
-.ipynb_checkpoints/Untitled-checkpoint.ipynb
+.idea/*
+.ipynb_checkpoints/*
