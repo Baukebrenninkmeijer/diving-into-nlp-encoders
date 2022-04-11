@@ -16,6 +16,7 @@ Bauke Brenninkmeijer
 ---
 
 # Goal
+
 Showcase the silent revolution of text tokenizers
 
 <!-- footer: DSFC 2022 • **Text Tokenizers for NLP** • Bauke Brenninkmeijer-->
@@ -115,3 +116,5 @@ A note on this method, to use it with markdown you need to use code like this
 - Footnote and superscript link <sup>[1][1]</sup>.
 
 [1]: https://www.google.com
+
+<!-- _footer: "1. www.google.com" -->
