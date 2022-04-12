@@ -65,8 +65,8 @@ Asian languages like Chinese often require different approaches of which I know 
 - Chops a text into smaller units called **`tokens`**.
 - Tokens can represent many different things, such as
   - words
+  - characters
   - parts of words
-  - characters.
 
 ---
 
@@ -118,6 +118,8 @@ Where are the tokenizers?
 
 - Created with [MARP](https://github.com/marp-team/marp) in Markdown
 - Created with [RISE](https://rise.readthedocs.io/en/stable/) in jupyter notebook
+
+Please find the slides on my github: https://github.com/Baukebrenninkmeijer/diving-into-nlp-encoders
 
 ---
 <!-- _class: invert -->
