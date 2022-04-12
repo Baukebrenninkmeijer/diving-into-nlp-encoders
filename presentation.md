@@ -1,15 +1,16 @@
 ---
 marp: true
 theme: uncover
+paginate: true
 ---
 
-<!-- _class: invert lead -->
-
-![bg](images/title-background.png)
+<!-- _class: invert -->
 
 # Text tokenizers for NLP
 
 Bauke Brenninkmeijer
+
+<!-- ![bg](images/title-background.png) -->
 
 <!-- footer: DSFC 2022 -->
 
@@ -27,22 +28,45 @@ Showcase the silent revolution of text tokenizers
 
 - MSc in CS and Data Science @Nijmegen
 - Data Scientist @ABNAMRO since 2019
-    - 1.5 years in Data Management
-    - ~1 years in Global Markets
+  - 1.5 years in Data Management
+  - ~1 years in Global Markets
 - Co-founder of DSFC
 
-- [![](/images/GitHub-Mark-32px.png)](https://github.com/Baukebrenninkmeijer) [@baukebrenninkmeijer](https://github.com/Baukebrenninkmeijer)
+- [![github_logo](images/GitHub-Mark-32px.png)](https://github.com/Baukebrenninkmeijer) [@baukebrenninkmeijer](https://github.com/Baukebrenninkmeijer)
 
+---
+
+# But why? What do you do with tokenizers?
+
+During my work: nothing, unfortunately.
+
+Outside of work: currently, also nothing.
+
+**But** I'm a curious person. And I worked with NLP before but never really dove deep into tokenizers.
+
+---
+
+# Disclaimer
+
+In an attempt to protect myself from looking foolish,
+I will limit the scope of this talk to english.
+
+Asian languages like Chinese often require different approaches of which I know nothing.
+
+---
+
+# Now I will bestow my knowledge upon thee
 
 ---
 
 # Tokenization [1/2]
+
 - Required for using text in any NLP techniques.
 - Chops a text into smaller units called **`tokens`**.
 - Tokens can represent many different things, such as
-    - words
-    - parts of words
-    - characters.
+  - words
+  - parts of words
+  - characters.
 
 ---
 
@@ -52,13 +76,12 @@ Showcase the silent revolution of text tokenizers
 - Tokens are mapped to an ID
 - Models ingest these IDs, since they can only use numeric values.
 
-
 ---
 
 # Definitions
 
-- **Corpus**: Dataset in NLP
-- **Token**: Part of a text, used to segment a corpus
+- **Corpus**: Textual dataset
+- **Token**: Part of a text, used as input for models.
 - **ID**: an index (i.e. a unique integer) that maps to a token.
 
 ---
@@ -74,47 +97,29 @@ Showcase the silent revolution of text tokenizers
 
 ---
 
-# Character based tokenizer
+# NLP Evolution
 
-- `Small vocabulary`. For ASCII, 256. With unicode, this is 1.1M characters.
-- No out of vocabulary (OOV) words/characters.
-- Lose a lot of meaninful information
-- Models typically have `max input lengths`
-
-```python
->>> list('Cat')
-['C', 'a', 't']
-```
+![w:1150px drop-shadow](images/evolution-nlp-models.png)
+Where are the tokenizers?
 
 ---
 
-# Character tokenizer in eastern languages
-*Disclaimer: I don't speak chinese*
+# NLP Evolution
 
-- Characters change meaning depending on surrounding characters
-- Names can contain multiple characters
-
-進口 means import, but word by word means “get into the mouth”
+![w:1150px drop-shadow](images/evolution-nlp-models_enriched.png)
 
 ---
 
-# Where it all started
-
-![bg right](images/middle-ages.png)
-
-- Word2Vec
-- Glove
+# On to the interactive slides!
 
 ---
-A note on this method, to use it with markdown you need to use code like this
-<section class="hbox">	<div class="container"> <div class="flex-col" data-markdown> * Column 1 Content </div> <div class="flex-col" data-markdown> * Column 2 Content </div> </div> </section>
+
+# My slides
+
+- Created with [MARP](https://github.com/marp-team/marp) in Markdown
+- Created with [RISE](https://rise.readthedocs.io/en/stable/) in jupyter notebook
 
 ---
-# Slide 2
+<!-- _class: invert -->
 
-- Footnote link only <sup>1<sup>.
-- Footnote and superscript link <sup>[1][1]</sup>.
-
-[1]: https://www.google.com
-
-<!-- _footer: "1. www.google.com" -->
+# Questions?
