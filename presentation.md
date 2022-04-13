@@ -1,7 +1,6 @@
 ---
 marp: true
 theme: uncover
-paginate: true
 ---
 
 <!-- _class: invert -->
@@ -20,13 +19,14 @@ Bauke Brenninkmeijer
 
 ![bg](image/../images/House%20Rules[53]%20%20-%20%20Read-Only.jpg)
 
+<!-- footer: DSFC 2022 • **Text Tokenizers for NLP** • Bauke Brenninkmeijer-->
+
 ---
+<!-- paginate: true -->
 
 # Goal
 
 Showcase the silent revolution of text tokenizers
-
-<!-- footer: DSFC 2022 • **Text Tokenizers for NLP** • Bauke Brenninkmeijer-->
 
 ---
 
