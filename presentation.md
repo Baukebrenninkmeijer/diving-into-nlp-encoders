@@ -18,6 +18,10 @@ Bauke Brenninkmeijer
 
 ---
 
+![bg](image/../images/House%20Rules[53]%20%20-%20%20Read-Only.jpg)
+
+---
+
 # Goal
 
 Showcase the silent revolution of text tokenizers
