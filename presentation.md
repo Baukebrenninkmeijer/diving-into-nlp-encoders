@@ -6,6 +6,8 @@ paginate: true
 
 <!-- _class: invert -->
 
+![width:200px](images/DSFC%20Logo.png)
+
 # Text tokenizers for NLP
 
 Bauke Brenninkmeijer
